@@ -112,6 +112,8 @@ const SignUpPage = () => {
                   className="bg-transparent w-full focus:outline-none"
                   name="password"
                   onChange={handleChange}
+                  pattern=".{5,}"
+                  title="5 characters minimum"
                 />
               </div>
             </div>
@@ -126,6 +128,8 @@ const SignUpPage = () => {
                   className="bg-transparent w-full focus:outline-none"
                   name="confirmPassword"
                   onChange={handleChange}
+                  pattern=".{5,}"
+                  title="5 characters minimum"
                 />
               </div>
             </div>

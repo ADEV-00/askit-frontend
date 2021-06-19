@@ -73,6 +73,7 @@ const LoginPage = () => {
             </div>
             <div className="mb-5">
               <div className="mb-2 font-bold text-gray-700">Password:</div>
+              <div></div>
               <div className="bg-gray-200 py-3 px-5 rounded-md">
                 <input
                   type="password"
@@ -80,6 +81,8 @@ const LoginPage = () => {
                   className="bg-transparent w-full focus:outline-none "
                   name="password"
                   onChange={hadnleChange}
+                  pattern=".{5,}"
+                  title="5 characters minimum"
                 />
               </div>
             </div>
